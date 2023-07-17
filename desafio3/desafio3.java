@@ -1,8 +1,21 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.util.StringTokenizer;
+
 public class Chalenge3 {
-    public static void main(String args[]) {
-        int[] arr = {1,2,3,4};
-        System.out.println(chalenge3(arr,1));
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int n = Integer.parseInt(st.nextToken());
+        int k = Integer.parseInt(st.nextToken());
+        int[] arr = new int[n];
+        for(int i=0; i < n ;i++){
+            arr[i] = Integer.parseInt(st.nextToken());
+        }
+        System.out.println(chalenge3(arr,k));
     }
+
 
     public static int chalenge3(int[] arr ,int alvo){
         int qtd = 0;
