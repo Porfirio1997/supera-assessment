@@ -1,7 +1,6 @@
 public class Chalenge3 {
     public static void main(String args[]) {
         int[] arr = {1,2,3,4};
-
         System.out.println(chalenge3(arr,1));
     }
 
@@ -11,7 +10,6 @@ public class Chalenge3 {
             for (int j=0;j<arr.length;j++) {
                 if(i==j)
                     continue;
-
                 if(arr[i] - arr[j] == alvo)
                     qtd++;
             }
